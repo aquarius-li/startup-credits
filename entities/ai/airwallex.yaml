@@ -40,12 +40,15 @@ offers:
         description: "The source record did not establish separate consideration for the program."
       benefits:
         - benefit_id: ben_tier_access
+          waived_item: "paid tier subscription fees for up to three months"
           description: "Up to three months of fee-free access to the Explore or Grow tier, varying by startup stage"
           kind: waiver
         - benefit_id: ben_payment_fees
+          waived_item: "payment processing fees on the first AUD$100,000 of collected payments"
           description: "Waived fees on the first AUD$100,000 of collected payments for new customers"
           kind: waiver
         - benefit_id: ben_fx_fees
+          waived_item: "FX conversion fees on the first AUD$100,000 of conversions"
           description: "Fee-free FX conversions up to the first AUD$100,000 of conversions for new customers"
           kind: waiver
         - benefit_id: ben_treasury
