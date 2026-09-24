@@ -60,84 +60,16 @@ offers:
         description: There is no cost to join the program or redeem the perks; standard Airwallex fees and pricing still apply.
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_requirement_01
-            kind: manual
-            reason: external-verification
-            statement: The company is a seed-stage startup, with priority given to startups that have raised external funding such as angel, seed, or institutional rounds.
-          - criterion_id: cri_requirement_02
-            kind: manual
-            reason: external-verification
-            statement: The company is a business entity registered in Australia or New Zealand with a valid ABN or NZBN.
-          - criterion_id: cri_requirement_03
-            fact: company.is_current_customer
-            kind: predicate
-            operator: eq
-            statement: The company is a new Airwallex customer.
-            value:
-              type: boolean
-              value: false
-          - criterion_id: cri_requirement_04
-            kind: manual
-            reason: external-verification
-            statement: The company completes Airwallex onboarding, including know-your-customer and other compliance checks.
+        criterion_id: cri_requirement_01
+        kind: manual
+        reason: external-verification
+        statement: Eligible seed stage startups that are new Airwallex customers with a business entity registered in Australia or New Zealand and a valid ABN or NZBN; Airwallex prioritises startups that have raised external funding.
     roles:
       terms_authority_entity_id: ent_01m1769k3p4zjf9xg68fgxpdm1
       access_operator_entity_id: ent_01m1769k3p4zjf9xg68fgxpdm1
     access:
       availability: public
       instructions: Apply from the Airwallex for Startups page or an approved accelerator or VC partner sign-up link, open an Airwallex account, and redeem the offers in the Rewards tab of the web app.
-      method: form
-      url: https://www.airwallex.com/en-au/startups
-    terms_url: https://www.airwallex.com/en-au/terms/rewards/airwallex-for-startups
-    source_ids:
-      - src_ce95da2feac3786c7d927a4e7c6eb826d0905ae66ec8d73b0426c88241c06797
-      - src_77cbeda8b4f27f175a37d24ff1ef30f4d66cc1855400e01528b15935fbb47e82
-  - offer_id: off_01m398jvscgmkv2yg01jzf5jqa
-    program_id: prg_01m1769k3q58arnv48erppzbrr
-    offer_slug: airwallex-for-startups-pre-seed
-    offer_slug_aliases: []
-    title: Airwallex Explore tier free for 3 months for pre-seed startups
-    summary: New pre-seed startups incorporated in Australia in the last 12 months and building a technology product get free access to the Airwallex Explore tier for 3 months.
-    lifecycle:
-      status: active
-      effective_from: 2026-08-29T16:43:01.010Z
-    economics:
-      benefits:
-        - benefit_id: ben_explore_access
-          description: Free access to the Airwallex Explore tier for 3 months.
-          kind: waiver
-          waived_item: Airwallex Explore tier fees for 3 months
-      consideration:
-        kind: variable
-        description: There is no cost to join the program or redeem the perks; standard Airwallex fees and pricing still apply.
-    eligibility:
-      rule:
-        kind: all
-        rules:
-          - criterion_id: cri_requirement_01
-            kind: manual
-            reason: external-verification
-            statement: The company was incorporated in Australia within 12 months before its Airwallex account activation date and is developing or building a technology product.
-          - criterion_id: cri_requirement_02
-            fact: company.is_current_customer
-            kind: predicate
-            operator: eq
-            statement: The company is a new Airwallex customer with a valid and eligible ABN.
-            value:
-              type: boolean
-              value: false
-          - criterion_id: cri_requirement_03
-            kind: manual
-            reason: external-verification
-            statement: The company completes Airwallex onboarding, including know-your-customer and other compliance checks.
-    roles:
-      terms_authority_entity_id: ent_01m1769k3p4zjf9xg68fgxpdm1
-      access_operator_entity_id: ent_01m1769k3p4zjf9xg68fgxpdm1
-    access:
-      availability: public
-      instructions: Apply from the Airwallex for Startups page or an approved accelerator or VC partner sign-up link, open an Airwallex account, and redeem the offer in the Rewards tab of the web app.
       method: form
       url: https://www.airwallex.com/en-au/startups
     terms_url: https://www.airwallex.com/en-au/terms/rewards/airwallex-for-startups
